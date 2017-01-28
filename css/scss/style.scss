@@ -1,0 +1,474 @@
+//colors
+$color_mine_shaft_approx: #333333;
+$color_celeste_approx: #cccccc;
+$color_dodger_blue_approx: #248cec;
+$color_charade_approx: #2a2d32;
+$black:  black;
+$white: #ffffff;
+$yellow: yellow;
+$color_tuna_approx: #35383c;
+$color_gallery_approx: #efeff0;
+$color_baltic_sea_approx: #2a2b2e;
+$color_stack_approx: #8a8a8a;
+$color_black_haze_approx: #f7f7f7;
+$gray:  grey;
+$color_buttercup_approx: #f4b60d;
+$color_gunsmoke_approx: #828385;
+
+//fonts
+$font_0: UbuntuLight;
+$font_1: Arial;
+
+//urls
+$url_0: url(../../img/comp_logo.png);
+
+//@extend-elements
+//original selectors
+//.wrapper_slider ul, .wrapper_slider li
+%extend_1 {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.wrapper {
+  padding-top: 35px;
+  width: 1160px;
+  height: 970px;
+  margin: 0 auto;
+}
+.wrapper5 {
+  width: 1160px;
+  margin: 0 auto;
+}
+.wrapper_header {
+  display: inline-block;
+  width: 100%;
+}
+.wrapper_main-menu {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  background-color: $color_charade_approx;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 55px;
+  li {
+    display: inline-block;
+    width: 115px;
+    text-align: center;
+    border-right: 1px solid $black;
+    margin-left: -.26em;
+  }
+  a {
+    font-size: 10pt;
+    font-family: $font_0;
+    text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+  }
+  ul {
+    float: left;
+    li a:hover {
+      color: $yellow;
+    }
+  }
+}
+.wrapper_header_logo {
+  font-family: $font_0;
+  color: $color_mine_shaft_approx;
+  float: left;
+}
+#wrapper_header_logo-p1 {
+  margin-left: 45px;
+  font-size: 25px;
+}
+#wrapper_header_logo-p2 {
+  margin-left: 45px;
+  font-size: 12px;
+}
+.wrapper_header_socialnetmenu {
+  float: right;
+  margin: 10px;
+  a {
+    margin-left: 14px;
+    display: inline-block;
+    color: $color_celeste_approx;
+    &:hover {
+      color: $color_dodger_blue_approx;
+    }
+  }
+}
+.wrapper_main-menu_active {
+  background-color: $color_dodger_blue_approx;
+}
+.wrapper_main-menu_contsearch {
+  float: right;
+  height: 33px;
+  width: 240px;
+  margin-top: 12px;
+  margin-right: 10px;
+  line-height: 33px;
+  border: 1px solid $black;
+  background-color: $color_tuna_approx;
+}
+#wrapper_main-menu_contsearch-search {
+  margin-left: 10px;
+  width: 200px;
+  background-color: $color_tuna_approx;
+}
+.wrapper_slider {
+  z-index: 9;
+  width: 1160px;
+  height: 470px;
+  overflow: hidden;
+  margin: 0 0 7px;
+  position: relative;
+  ul {
+    @extend %extend_1;
+    width: 9999px;
+    li {
+      list-style-type: none;
+      float: left;
+      width: 1160px;
+      height: 470px;
+    }
+  }
+  li {
+    @extend %extend_1;
+  }
+  .nav {
+    position: absolute;
+    left: 545px;
+    bottom: 16px;
+    span {
+      opacity: 0.9;
+      background: $white;
+      margin: 0 15px 0 0;
+      width: 10px;
+      height: 10px;
+      cursor: pointer;
+      overflow: hidden;
+      display: block;
+      float: left;
+      border: 3px solid $white;
+      &.on {
+        background: $black;
+      }
+    }
+  }
+}
+.wrapper_content {
+  margin-top: 55px;
+}
+.wrapper_content_block {
+  width: 33%;
+  display: inline-block;
+}
+.wrapper_content_block-number {
+  float: left;
+  width: 3cm;
+  height: 7cm;
+  display: inline-block;
+  font-family: $font_0;
+  font-size: 65pt;
+  color: $color_gallery_approx;
+}
+.wrapper_content_block_rb {
+  float: left;
+  width: 6.9cm;
+  display: inline-block;
+  padding-left: 7px;
+}
+.wrapper_content_block_rb-img {
+  margin: 15px 0 10px 5px;
+}
+.wrapper_content_block_rb-head {
+  font-family: $font_0;
+  font-weight: bold;
+  font-size: 15pt;
+  color: $color_baltic_sea_approx;
+}
+.wrapper_content_block_rb-text {
+  font-family: $font_1;
+  font-size: 10pt;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: $color_stack_approx;
+  line-height: 20px;
+}
+.wrapper_content_block_rb_rmore {
+  font-family: $font_0;
+  font-weight: bold;
+  font-size: 10pt;
+  text-decoration: none;
+  color: $color_baltic_sea_approx;
+  &:hover {
+    color: $color_dodger_blue_approx;
+  }
+}
+.services {
+  background-color: $color_charade_approx;
+  height: 500px;
+  display: block;
+}
+.services_wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+.services_wrapper-head {
+  font-family: $font_0;
+  font-weight: bold;
+  font-size: 20pt;
+  line-height: 120px;
+  color: $white;
+}
+.services_wrapper_block {
+  width: 250px;
+  margin-right: 50px;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  position: relative;
+  &:hover {
+    img {
+      display: inline-block;
+    }
+    p {
+      color: $yellow;
+    }
+  }
+}
+.services_wrapper_block_head {
+  font-family: $font_0;
+  font-weight: bold;
+  color: $white;
+  font-size: 15px;
+  line-height: 80px;
+}
+.services_wrapper_block-img {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.news_banners {
+  width: 100%;
+  background-color: $color_black_haze_approx;
+  height: 550px;
+}
+.news_banners_wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  height: 600px;
+}
+.latest_news {
+  width: 52%;
+  float: left;
+}
+.p_wrapper3 {
+  font-family: $font_0;
+  font-weight: bold;
+  color: $color_charade_approx;
+  font-size: 18pt;
+  line-height: 130px;
+}
+.img_news {
+  display: inline-block;
+  float: left;
+  position: relative;
+  right: 18px;
+  margin-right: 20px;
+}
+.a_news {
+  text-decoration: none;
+  font-family: $font_0;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 35px;
+  color: $color_charade_approx;
+  &:hover {
+    color: $color_dodger_blue_approx;
+  }
+}
+.a_news_in {
+  text-decoration: none;
+}
+.p_head_wrapper3 {
+  width: 50%;
+  display: block;
+  float: left;
+}
+.news {
+  display: block;
+  float: left;
+  margin-bottom: 30px;
+}
+.banner_panel {
+  width: 48%;
+  float: left;
+}
+.accordion {
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  overflow: hidden;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 3px;
+  * {
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+  }
+}
+.accordion-section-title {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  border: 1px solid $gray;
+  background: $white;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all linear 0.15s;
+  font-size: 10pt;
+  color: $color_charade_approx;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-family: $font_0;
+  font-weight: bold;
+  &:before {
+    width: 8%;
+    content: ' +';
+    display: inline-block;
+    text-align: center;
+  }
+  &.active {
+    background: $color_buttercup_approx;
+    color: $white;
+    &:before {
+      content: "-";
+    }
+  }
+  &:hover {
+    background: $color_buttercup_approx;
+    color: $white;
+  }
+}
+.accordion-section-content {
+  padding: 30px 0 30px 8%;
+  display: none;
+  font-family: $font_1;
+  font-size: 10pt;
+  color: $color_stack_approx;
+  line-height: 20px;
+}
+.company_logo {
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  height: 120px;
+}
+#navlist {
+  position: relative;
+  li {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    height: 80px;
+    display: block;
+  }
+  a {
+    height: 80px;
+    display: block;
+  }
+}
+#logo1 {
+  width: 170px;
+  background: $url_0 -10px -10px;
+}
+#logo2 {
+  width: 170px;
+  left: 180px;
+  background: $url_0 -300px -10px;
+}
+#logo3 {
+  width: 240px;
+  left: 360px;
+  background: $url_0 -610px -10px;
+}
+#logo4 {
+  width: 180px;
+  left: 610px;
+  background: $url_0 -970px -10px;
+}
+#logo5 {
+  width: 190px;
+  left: 800px;
+  background: $url_0 -1270px -10px;
+}
+#logo6 {
+  width: 160px;
+  left: 1000px;
+  background: $url_0 -1560px -10px;
+}
+.footer {
+  background-color: $color_charade_approx;
+  height: 320px;
+  display: block;
+  p {
+    line-height: 120px;
+    color: $white;
+    font-family: $font_0;
+    font-size: 12pt;
+  }
+  li {
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid $gray;
+    width: 80%;
+  }
+  a {
+    text-decoration: none;
+    line-height: 30px;
+    font-family: $font_1;
+    font-size: 10pt;
+    color: $color_gunsmoke_approx;
+    &:hover {
+      color: $color_dodger_blue_approx;
+    }
+  }
+}
+.footer_wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  height: 500px;
+}
+.footer_link {
+  width: 25%;
+  float: left;
+}
+.footer2 {
+  height: 70px;
+  background-color: $color_tuna_approx;
+  line-height: 70px;
+  font-family: $font_1;
+  color: $color_gunsmoke_approx;
+  font-size: 13px;
+}
+.footer2_wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+.news_in p {
+  padding-top: 20px;
+  font-family: $font_1;
+  font-size: 12pt;
+  line-height: 17px;
+  color: $color_stack_approx;
+}
