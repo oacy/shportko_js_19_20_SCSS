@@ -32,3 +32,4 @@
 *.ipr
 *.iws
 
+node_modules/**/*
